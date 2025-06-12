@@ -73,11 +73,12 @@ JSP-CrudMate/
 
 -  Set your PostgreSQL DB credentials in application.properties.
 
-  ```
-  spring.datasource.url=jdbc:postgresql://localhost:5432/yourdbname
-  spring.datasource.username=yourusername
-  spring.datasource.password=yourpassword
- ```
+   ```
+   spring.datasource.url=jdbc:postgresql://localhost:5432/yourdbname
+   spring.datasource.username=yourusername
+   spring.datasource.password=yourpassword
+   ```
+
 
 3. **Run the App**
 
