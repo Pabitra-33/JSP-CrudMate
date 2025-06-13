@@ -30,4 +30,13 @@ public class ChildrenController {
 		mv.setViewName("profile");
 		return mv;
 	}
+	
+	
+	//today's task
+	@GetMapping("/user")
+	public ModelAndView takeUser(ModelAndView mv) {
+		mv.addObject("welcome", "Welcome To User Information Form");
+		mv.setViewName("form");
+		return mv;
+	}
 }
