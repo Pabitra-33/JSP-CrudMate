@@ -25,5 +25,6 @@
 </head>
 <body>
     <h1 class="welcome-message">Welcome to Your Profile!</h1>
+	<h3>The Children name is ${childname}</h3>
 </body>
 </html>
