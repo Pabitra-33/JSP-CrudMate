@@ -47,23 +47,24 @@ public class ChildrenController {
 		return mv;
 	}
 	
-	@GetMapping("/getbychildname")
+	@GetMapping("/getbyname")
 	public ModelAndView getChildrenByName(@RequestParam String name, ModelAndView mv){
-		mv.addObject("childname", name);
+		mv.addObject("childname", name);//model data
 		
 		List<Children> childrens = childrenService.getByUsingName(name);
+		System.out.println(childrens);
 		
-		mv.setViewName("profile");
+		mv.setViewName("profile");//view name
 		return mv;
 	}
 	
 	
-	@GetMapping("/getbyage")
+	@GetMapping("/getbyage/{age}")
 	public String getChildrenByName(@PathVariable int age, Model model){
 		model.addAttribute("childage", age);
 		
 		List<Children> childrens = childrenService.getByUsingAge(age);
-		
+		System.out.println(childrens);
 		return "profile";
 	}
 	
