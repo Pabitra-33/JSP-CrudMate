@@ -39,11 +39,11 @@ public class ChildrenController {
 	
 	@PostMapping("/register")
 	public ModelAndView registerChild(Children child, ModelAndView mv) {
-		mv.addObject("childdata", child);
+		mv.addObject("childdata", child);//adding model data
 		
 		childrenService.saveChildren(child); //saving the children's data coming from fronted
 		
-		mv.setViewName("profile");
+		mv.setViewName("profile");//setting view name
 		return mv;
 	}
 	
