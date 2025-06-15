@@ -8,6 +8,7 @@ public interface ChildrenService {
 	
 	public void saveChildren(Children child);
 	
+	//custom method created
 	public List<Children> getByUsingName(String name);
 	
 	public List<Children> getByUsingAge(int age);
