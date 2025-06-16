@@ -26,10 +26,6 @@
         <label for="course">Course:</label>
         <select id="course" name="course" required>
             <option value="">--Select--</option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
         </select><br><br>
 
         <button type="submit">Display</button>
