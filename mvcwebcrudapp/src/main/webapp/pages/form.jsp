@@ -33,7 +33,7 @@
 	        <tr>
 	            <td>Course:</td>
 	            <td>
-	                <form:select path="course">
+	                <form:select path="courses">
 	                    <form:options items="${courses}" />
 	                </form:select>
 	            </td>
