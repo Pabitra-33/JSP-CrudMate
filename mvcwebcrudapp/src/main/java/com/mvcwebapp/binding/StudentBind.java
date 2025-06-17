@@ -2,22 +2,23 @@ package com.mvcwebapp.binding;
 
 import java.util.Arrays;
 
-//creating this class to bind the data from the fronted data in this class attributes for later use
-public class ChildrenBind {
+//creating this class to bind the data from the fronted data in this class attributes for later use.
+public class StudentBind {
 
-	private int id;
+	private Integer sid;
 	private String name;
+	private String email;
 	private String gender;
-	private int age;
 	private String courses;
 	private String[] timings;
 	
+	
 	//getters and setters
-	public int getId() {
-		return id;
+	public Integer getSid() {
+		return sid;
 	}
-	public void setId(int id) {
-		this.id = id;
+	public void setSid(Integer sid) {
+		this.sid = sid;
 	}
 	public String getName() {
 		return name;
@@ -25,17 +26,17 @@ public class ChildrenBind {
 	public void setName(String name) {
 		this.name = name;
 	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
 	public String getGender() {
 		return gender;
 	}
 	public void setGender(String gender) {
 		this.gender = gender;
-	}
-	public int getAge() {
-		return age;
-	}
-	public void setAge(int age) {
-		this.age = age;
 	}
 	public String getCourses() {
 		return courses;
@@ -51,9 +52,10 @@ public class ChildrenBind {
 	}
 	
 	
+	//toString method
 	@Override
 	public String toString() {
-		return "ChildrenBind [id=" + id + ", name=" + name + ", gender=" + gender + ", age=" + age + ", courses="
+		return "StudentBind [sid=" + sid + ", name=" + name + ", email=" + email + ", gender=" + gender + ", courses="
 				+ courses + ", timings=" + Arrays.toString(timings) + "]";
 	}
 }
