@@ -2,12 +2,14 @@ package com.mvcwebapp.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
+@Table(name = "student_data")
 public class Student {
 
 	@Id
-	private int sid;
+	private Integer sid;
 	private String name;
 	private String email;
 	private String gender;
