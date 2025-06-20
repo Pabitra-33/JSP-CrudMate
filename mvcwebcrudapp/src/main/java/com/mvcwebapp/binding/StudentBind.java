@@ -3,6 +3,7 @@ package com.mvcwebapp.binding;
 import java.util.Arrays;
 
 //creating this class to bind the data from the fronted data in this class attributes for later use.
+
 public class StudentBind {
 
 	private Integer sid;
