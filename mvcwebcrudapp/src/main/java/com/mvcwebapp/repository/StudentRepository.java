@@ -8,4 +8,5 @@ import com.mvcwebapp.entity.Student;
 @Repository
 public interface StudentRepository extends JpaRepository<Student, Integer>{
 
+	//this layer is used to interact with the database
 }
