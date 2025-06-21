@@ -4,6 +4,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
+//this is our entity class to create table and perform operation
 @Entity
 @Table(name = "student_data")
 public class Student {
