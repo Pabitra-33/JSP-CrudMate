@@ -11,7 +11,7 @@ public class StudentBind {
 	private String email;
 	private String gender;
 	private String courses;
-	private String[] timings;
+	private String[] timings;//as we want our user to store multiple timings from the fronted
 	
 	
 	//getters and setters
