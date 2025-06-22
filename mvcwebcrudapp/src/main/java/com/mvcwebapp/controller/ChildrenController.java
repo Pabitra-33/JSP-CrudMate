@@ -20,19 +20,19 @@ import com.mvcwebapp.service.ChildrenService;
 public class ChildrenController {
 	
 	@Autowired
-	private ChildrenService childrenService;
+	private ChildrenService childrenService;//automatic dependency injection
 
 	
 	@GetMapping("/home")
 	public String homePage() {
-		return "index";
+		return "index";//view names
 	}
 	
 	
 	@GetMapping("/welcome")
 	public ModelAndView Page(ModelAndView modView) {
 		modView.addObject("msg", "Welcome To Our Application Home");
-		modView.setViewName("register");
+		modView.setViewName("register");//setting the view name to modelview object
 		return modView;
 	}
 	
@@ -65,6 +65,6 @@ public class ChildrenController {
 		
 		List<Children> childrens = childrenService.getByUsingAge(age);
 		System.out.println(childrens);
-		return "profile";//
+		return "profile";//returning the view name
 	}
 }
