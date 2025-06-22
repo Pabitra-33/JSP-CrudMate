@@ -49,22 +49,22 @@ public class ChildrenController {
 	
 	@GetMapping("/getbyname")
 	public ModelAndView getChildrenByName(@RequestParam String name, ModelAndView mv){
-		mv.addObject("childname", name);//model data
+		mv.addObject("childname", name);//adding model data
 		
 		List<Children> childrens = childrenService.getByUsingName(name);
 		System.out.println(childrens);
 		
-		mv.setViewName("profile");//view name
+		mv.setViewName("profile");//setting the view name
 		return mv;
 	}
 	
 	
 	@GetMapping("/getbyage/{age}")
 	public String getChildrenByName(@PathVariable int age, Model model){
-		model.addAttribute("childage", age);
+		model.addAttribute("childage", age);//adding the model data as key-value pair
 		
 		List<Children> childrens = childrenService.getByUsingAge(age);
 		System.out.println(childrens);
-		return "profile";
+		return "profile";//
 	}
 }
