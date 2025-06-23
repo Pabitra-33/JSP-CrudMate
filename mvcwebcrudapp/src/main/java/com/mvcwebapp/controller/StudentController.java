@@ -25,7 +25,7 @@ public class StudentController {
 	@Autowired
 	private StudentService studentService;
 	
-	//we need to create three methods: 
+	//we need to create three methods:
 	//To show the form,
 	//To save data, 
 	//To show students data.
