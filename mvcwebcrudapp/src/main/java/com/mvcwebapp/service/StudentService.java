@@ -1,5 +1,7 @@
 package com.mvcwebapp.service;
 
+import java.util.List;
+
 import com.mvcwebapp.entity.Student;
 
 public interface StudentService {
@@ -7,4 +9,6 @@ public interface StudentService {
 	public void saveStudent(Student student);
 	
 	public void deleteStudent(int id);
+	
+	public List<Student> listSts();
 }
