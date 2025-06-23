@@ -1,5 +1,7 @@
 package com.mvcwebapp.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -20,5 +22,10 @@ public class StudentServiceImplementation implements StudentService{
 	@Override
 	public void deleteStudent(int id) {
 		studentRepository.deleteById(id);
+	}
+
+	@Override
+	public List<Student> listSts() {
+		return studentRepository.findAll();
 	}
 }
