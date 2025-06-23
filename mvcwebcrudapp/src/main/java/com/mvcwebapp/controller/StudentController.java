@@ -8,9 +8,11 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.mvcwebapp.binding.StudentBind;
 import com.mvcwebapp.entity.Student;
@@ -25,8 +27,8 @@ public class StudentController {
 	
 	//we need to create three methods: 
 	//To show the form,
-	//to save data, 
-	//to show students data
+	//To save data, 
+	//To show students data.
 	
 	@GetMapping("/register")
 	public String loadForm(Model model) {
@@ -74,5 +76,12 @@ public class StudentController {
 		System.out.println("Method tiggered");
 		model.addAttribute("msg", "Data Saved");
 		return "form";
+	}
+	
+	
+	@DeleteMapping("/deleteByid")
+	public String deleteData(@RequestParam int id) {
+		studentService.deleteStudent(id);
+		return "Data Deleted";
 	}
 }
