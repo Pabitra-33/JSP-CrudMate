@@ -2,7 +2,7 @@ package com.mvcwebapp.binding;
 
 import java.util.Arrays;
 
-//creating this class to bind the data from the fronted data in this class attributes for later use.
+//created this class to bind the data coming from the fronted, in this class attributes for later use.
 //binding class
 public class StudentBind {
 
@@ -11,7 +11,7 @@ public class StudentBind {
 	private String email;
 	private String gender;
 	private String courses;
-	private String[] timings;//as we want our user to store multiple timings from the fronted
+	private String[] timings;//taken as array, since we want our user to store multiple timings from the fronted
 	
 	
 	//getters and setters
